@@ -1,0 +1,20 @@
+// ≥1200px
+@include media-breakpoint-down(xl) {
+}
+// ≥992px
+@include media-breakpoint-down(lg) {
+  .menu-left {
+    margin-left: auto;
+  }
+  .menu-list {
+    &__profile {
+      margin-left: auto;
+    }
+  }
+}
+// ≥768px
+@include media-breakpoint-down(md) {
+}
+// ≥576px
+@include media-breakpoint-down(sm) {
+}

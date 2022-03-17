@@ -1,0 +1,53 @@
+.header {
+  padding: 11px 32px 11px 27px;
+  &__wrapper {
+    margin: 0;
+  }
+}
+.menu-list {
+  width: 100%;
+  &__item {
+    margin-left: 37px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  &__link {
+    position: relative;
+    font-size: 12px;
+    line-height: 21px;
+    letter-spacing: 1.7px;
+    text-transform: uppercase;
+    &:hover {
+      color: #000;
+    }
+  }
+  &__button {
+    margin-left: 18px;
+  }
+  &__cart-counter {
+    position: absolute;
+    right: 8px;
+    bottom: 10px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+  }
+}
+.menu-button {
+  width: 50px;
+  height: 16px;
+  &__line {
+    height: 2px;
+    width: 100%;
+    background-color: #000;
+    border-radius: 15%;
+  }
+}
+.logo {
+  &__img {
+    width: 120px;
+    height: 38px;
+    object-fit: contain;
+  }
+}
