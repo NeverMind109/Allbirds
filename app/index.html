@@ -14,78 +14,101 @@
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
-    <header class="header">
-            <div
-              class="row header__wrapper row-cols-lg-auto d-flex align-items-center justify-content-between"
+    <section class="title-screen">
+      <header class="header">
+        <div
+          class="row header__wrapper row-cols-lg-auto d-flex align-items-center justify-content-between"
+        >
+          <nav class="menu-left d-md-flex d-none order-2 order-lg-0 col-8">
+            <ul class="menu-list d-flex align-items-center">
+              <li class="menu-list__item">
+                <a class="menu-list__link" href="#">Men</a>
+              </li>
+              <li class="menu-list__item">
+                <a class="menu-list__link" href="#">Women</a>
+              </li>
+              <li class="menu-list__item">
+                <a class="menu-list__link" href="#">New Arrivals</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="logo order-0 order-lg-1 col-6 col-md-3" href="index.html">
+            <img
+              class="logo__img"
+              src="images/logo.svg"
+              alt="Logo"
+              width="120"
+              height="38"
+            />
+          </a>
+          <nav class="menu-right d-md-flex d-none order-1 order-lg-2 col-8">
+            <ul class="menu-list d-flex align-items-center">
+              <li class="menu-list__item">
+                <a class="menu-list__link" href="#">Sustainability</a>
+              </li>
+              <li class="menu-list__item">
+                <a class="menu-list__link" href="#">Stores</a>
+              </li>
+              <li class="menu-list__item menu-list__button menu-list__profile">
+                <a class="menu-list__link" href="#">
+                  <img
+                    class="menu-list__img"
+                    src="images/profile-icon.svg"
+                    alt="Profile"
+                    width="19"
+                    height="23"
+                  />
+                </a>
+              </li>
+              <li class="menu-list__item menu-list__button">
+                <a class="menu-list__link" href="#">
+                  <img
+                    class="menu-list__img"
+                    src="images/question-icon.svg"
+                    alt="FAQ"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </li>
+              <li class="menu-list__item menu-list__button">
+                <a class="menu-list__link" href="#">
+                  <img
+                    class="menu-list__img"
+                    src="images/cart-icon.svg"
+                    alt="Cart"
+                    width="33"
+                    height="29"
+                  />
+                  <span class="menu-list__cart-counter">0</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div
+            class="menu-button d-md-none d-flex flex-column justify-content-between order-4 justify-content-end col-3"
+          >
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+          </div>
+        </div>
+      </header>
+      <section class="hero d-flex align-items-center align-items-md-end">
+        <div class="hero__wrapper">
+          <h1 class="hero__title">The Trail Runner SWT Is Here.</h1>
+          <p class="hero__text">Durable. Comfortable. Ready to get dirty.</p>
+          <div class="hero__buttons">
+            <a class="button-light hero__button" href="#"
+              ><span class="hero__button-text">Shop Men</span></a
             >
-              <nav class="menu-left d-md-flex d-none order-2 order-lg-0 col-8">
-                <ul class="menu-list d-flex align-items-center">
-                  <li class="menu-list__item">
-                    <a class="menu-list__link" href="#">Men</a>
-                  </li>
-                  <li class="menu-list__item">
-                    <a class="menu-list__link" href="#">Women</a>
-                  </li>
-                  <li class="menu-list__item">
-                    <a class="menu-list__link" href="#">New Arrivals</a>
-                  </li>
-                </ul>
-              </nav>
-              <a class="logo order-0 order-lg-1 col-6 col-md-3" href="index.html">
-                <img
-                  class="logo__img"
-                  src="images/logo.svg"
-                  alt="Logo"
-                  width="120"
-                  height="38"
-                />
-              </a>
-              <nav class="menu-right d-md-flex d-none order-1 order-lg-2 col-8">
-                <ul class="menu-list d-flex align-items-center">
-                  <li class="menu-list__item">
-                    <a class="menu-list__link" href="#">Sustainability</a>
-                  </li>
-                  <li class="menu-list__item">
-                    <a class="menu-list__link" href="#">Stores</a>
-                  </li>
-                  <li class="menu-list__item menu-list__button menu-list__profile"><a class="menu-list__link" href="#">
-                      <img
-                        class="menu-list__img"
-                        src="images/profile-icon.svg"
-                        alt="Profile"
-                        width="19"
-                        height="23"
-                      />
-                    </a></li>
-                  <li class="menu-list__item menu-list__button"><a class="menu-list__link" href="#">
-                      <img
-                        class="menu-list__img"
-                        src="images/question-icon.svg"
-                        alt="FAQ"
-                        width="24"
-                        height="24"
-                      />
-                    </a></li>
-                  <li class="menu-list__item menu-list__button"><a class="menu-list__link" href="#">
-                      <img
-                        class="menu-list__img"
-                        src="images/cart-icon.svg"
-                        alt="Cart"
-                        width="33"
-                        height="29"
-                      />
-                      <span class="menu-list__cart-counter">0</span>
-                    </a></li>
-                </ul>
-              </nav>
-              <div class="menu-button d-md-none d-flex flex-column justify-content-between order-4 justify-content-end col-3">
-                  <span class="menu-button__line"></span>
-                  <span class="menu-button__line"></span>
-                  <span class="menu-button__line"></span>
-              </div>
-            </div>
-      </div>
-    </header>
+            <a class="button-light hero__button" href="#"
+              ><span class="hero__button-text">Shop Women</span></a
+            >
+          </div>
+        </div>
+      </section>
+    </section>
     <script src="js/main.min.js"></script>
   </body>
 </html>

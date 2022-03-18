@@ -1,4 +1,15 @@
+.title-screen {
+  position: relative;
+  padding-top: 60px;
+  height: 100vh;
+}
 .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: #fff;
   padding: 11px 32px 11px 27px;
   &__wrapper {
     margin: 0;
@@ -20,6 +31,7 @@
     text-transform: uppercase;
     &:hover {
       color: #000;
+      text-decoration: underline;
     }
   }
   &__button {
@@ -28,7 +40,7 @@
   &__cart-counter {
     position: absolute;
     right: 8px;
-    bottom: 10px;
+    bottom: 9px;
     font-size: 12px;
     line-height: 14px;
     color: #000000;
@@ -37,6 +49,7 @@
 .menu-button {
   width: 50px;
   height: 16px;
+  padding-right: 0;
   &__line {
     height: 2px;
     width: 100%;

@@ -1,0 +1,39 @@
+.hero {
+  background: url("../images/hero-img.jpg") no-repeat;
+  background-position: left center;
+  background-size: cover;
+  padding-top: 60px;
+  height: 100%;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 66px 54px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 63px;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    margin-bottom: 11px;
+  }
+  &__text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    margin-bottom: 24px;
+  }
+  &__button {
+    width: 180px;
+  }
+  &__button-text {
+    margin: 0 auto;
+    word-break: break-all;
+  }
+}
+.hero__button + .hero__button {
+  margin-left: 24px;
+}

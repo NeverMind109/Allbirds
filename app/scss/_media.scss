@@ -3,6 +3,9 @@
 }
 // ≥992px
 @include media-breakpoint-down(lg) {
+  .title-screen {
+    padding-top: 84px;
+  }
   .menu-left {
     margin-left: auto;
   }
@@ -14,7 +17,31 @@
 }
 // ≥768px
 @include media-breakpoint-down(md) {
+  .title-screen {
+    padding-top: 60px;
+  }
+  .header {
+    padding: 11px 30px;
+  }
 }
 // ≥576px
 @include media-breakpoint-down(sm) {
+  .hero {
+    &__wrapper {
+      align-items: center;
+      text-align: center;
+      padding: 50px;
+    }
+    &__title {
+      font-size: 32px;
+      line-height: 50px;
+    }
+    &__button {
+      display: flex;
+    }
+  }
+  .hero__button + .hero__button {
+    margin-left: 0;
+    margin-top: 20px;
+  }
 }
