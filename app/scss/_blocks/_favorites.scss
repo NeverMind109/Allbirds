@@ -1,0 +1,118 @@
+.favorites {
+  &__wrapper {
+    margin: 0;
+  }
+  &__title {
+    padding: 0;
+  }
+  &__navigation {
+    padding: 0;
+  }
+  &__tabs {
+    max-width: 600px;
+    padding: 32px 0 0;
+    border: none;
+    margin-bottom: 2px;
+  }
+  &__tab-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #212a2f;
+    padding: 0 0 12px;
+  }
+  &__content {
+    padding: 34px 0 0;
+    border-top: 2px solid #d3d4d5;
+  }
+  &__card {
+    max-width: 396px;
+    border: none;
+    border-radius: 0;
+  }
+  &__card-img {
+    max-width: 100%;
+    height: 396px;
+    background: #f5f5f5;
+  }
+  &__img-buttons {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &__img-button {
+    display: block;
+    width: 296px;
+    margin: 0 auto;
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+  &__img-text {
+    margin: 0 auto;
+    word-break: break-all;
+  }
+  &__body {
+    padding: 18px 30px;
+    color: #212a2f;
+  }
+  &__card-title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 29px;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid #d3d4d5;
+    padding-bottom: 10px;
+    margin-bottom: 11px;
+  }
+  &__card-feature {
+    position: relative;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    padding-left: 42px;
+    &::before {
+      position: absolute;
+      content: "";
+      margin-right: 12px;
+      width: 30px;
+      height: 30px;
+      bottom: -3px;
+      left: 0;
+    }
+  }
+  &__card-rain {
+    &::before {
+      background: url("../../images/rain-icon.svg") no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  &__card-wind {
+    &::before {
+      background: url("../../images/wind-icon.svg") no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  &__card-cloud {
+    &::before {
+      background: url("../../images/cloud-icon.svg") no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}
+.nav-tabs .favorites__tab-link:hover {
+  border-color: transparent;
+  color: #212a2f;
+}
+.nav-tabs .favorites__tab-link.active {
+  color: #212a2f;
+  border-color: transparent;
+  border-bottom: 2px solid #000000;
+  font-weight: 700;
+}
