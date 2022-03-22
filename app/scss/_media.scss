@@ -39,7 +39,7 @@
       }
     }
   }
-  .collections {
+  .slider-section {
     &__slider-prev {
       left: -33px;
     }
@@ -85,13 +85,29 @@
       margin-bottom: 30px;
     }
   }
-  .collections {
+  .slider-section {
     &__card-img {
       width: 100%;
       height: 300px;
     }
     &__card-body {
       padding: 10px;
+    }
+  }
+  .second-slogan {
+    &__title {
+      margin-bottom: 20px;
+    }
+    &__button {
+      width: 250px;
+    }
+  }
+  .third-slogan {
+    &__title {
+      margin-bottom: 15px;
+    }
+    &__button {
+      width: 300px;
     }
   }
 }
@@ -153,7 +169,7 @@
       }
     }
   }
-  .collections {
+  .slider-section {
     &__title {
       text-align: center;
     }
@@ -166,6 +182,16 @@
     &__card {
       max-width: 400px;
       padding: 0 5px;
+    }
+  }
+  .second-slogan {
+    &__button {
+      width: 180px;
+    }
+  }
+  .third-slogan {
+    &__button {
+      width: 180px;
     }
   }
 }
