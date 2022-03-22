@@ -1,0 +1,53 @@
+.subscribe {
+  &__wrapper {
+    padding: 48px 0;
+  }
+  &__title {
+    margin-bottom: 34px;
+  }
+  &__text {
+    max-width: 830px;
+    text-align: center;
+    margin: 0 auto 50px;
+  }
+}
+.subscribe-form {
+  &__input {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: rgba(0, 0, 0, 0.22);
+    padding: 10px 15px 10px 30px;
+    border: none;
+    border-bottom: 2px solid #212a2f;
+    margin-right: 12px;
+    &::placeholder {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 14px;
+      color: rgba(0, 0, 0, 0.22);
+    }
+  }
+  &__button {
+    width: 111px;
+  }
+  &__label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    color: #74797c;
+    margin-top: 24px;
+  }
+  &__link {
+    margin: 0 10px;
+    &:hover {
+      color: #74797c;
+      text-decoration: underline;
+    }
+  }
+}

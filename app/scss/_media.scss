@@ -110,6 +110,23 @@
       width: 300px;
     }
   }
+  .subscribe {
+    &__wrapper {
+      padding: 15px 0 30px;
+    }
+    &__text {
+      max-width: 100%;
+    }
+  }
+  .subscribe-form {
+    &__input {
+      width: 95%;
+      margin: 0 0 10px 0;
+    }
+    &__button {
+      width: 95%;
+    }
+  }
 }
 // ≥576px
 @include media-breakpoint-down(sm) {
@@ -192,6 +209,27 @@
   .third-slogan {
     &__button {
       width: 180px;
+    }
+  }
+  .subscribe {
+    &__wrapper {
+      padding: 0 0 15px;
+    }
+    &__title {
+      margin-bottom: 20px;
+    }
+    &__text {
+      margin: 0 auto 20px;
+    }
+  }
+  .subscribe-form {
+    &__label {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__link {
+      margin: 10px auto;
+      text-decoration: underline;
     }
   }
 }
