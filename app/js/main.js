@@ -1,4 +1,17 @@
 $(function () {
+  $(".menu-button").on("click", function () {
+    $(".menu-mobile").toggleClass("menu-mobile--active");
+    $("body").toggleClass("overflow-hidden");
+    $(".menu-mobile__link").on("click", function () {
+      $(".menu-mobile").removeClass("menu-mobile--active");
+      $("body").removeClass("overflow-hidden");
+    });
+    $(".logo").on("click", function () {
+      $(".menu-mobile").removeClass("menu-mobile--active");
+      $("body").removeClass("overflow-hidden");
+    });
+  });
+
   $(".collections__carousel").slick({
     infinite: true,
     slidesToShow: 3,

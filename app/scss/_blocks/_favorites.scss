@@ -86,21 +86,21 @@
   }
   &__card-rain {
     &::before {
-      background: url("../../images/rain-icon.svg") no-repeat;
+      background: url("../images/rain-icon.svg") no-repeat;
       background-position: center;
       background-size: cover;
     }
   }
   &__card-wind {
     &::before {
-      background: url("../../images/wind-icon.svg") no-repeat;
+      background: url("../images/wind-icon.svg") no-repeat;
       background-position: center;
       background-size: cover;
     }
   }
   &__card-cloud {
     &::before {
-      background: url("../../images/cloud-icon.svg") no-repeat;
+      background: url("../images/cloud-icon.svg") no-repeat;
       background-position: center;
       background-size: cover;
     }
