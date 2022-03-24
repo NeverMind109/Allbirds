@@ -93,3 +93,58 @@ body {
     border: 2px solid #212a2f;
   }
 }
+.profile {
+  position: relative;
+  &::after {
+    content: "";
+    display: block;
+    margin-top: 5px;
+    width: 19px;
+    height: 23px;
+    background: url("../images/profile-icon.svg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+.question {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url("../images/question-icon.svg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.cart {
+  content: "";
+  display: block;
+  width: 33px;
+  height: 28px;
+  background: url("../images/cart-icon.svg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.flag-jp {
+  position: relative;
+  &::after {
+    content: "";
+    display: block;
+    width: 37px;
+    height: 22px;
+    background: url("../images/footer-flag-1.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+.flag-sk {
+  position: relative;
+  &::after {
+    content: "";
+    display: block;
+    width: 37px;
+    height: 22px;
+    background: url("../images/footer-flag-2.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
