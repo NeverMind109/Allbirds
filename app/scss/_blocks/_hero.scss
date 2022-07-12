@@ -1,9 +1,14 @@
 .hero {
-  background: url("../images/hero-img.jpg") no-repeat;
+  height: 100%;
+  background-image: url("../images/hero-img.jpg");
+  background-image: (
+    "../images/hero-img.webp" type("image/webp"),
+    "../images/hero-img.jpg" type("image/jpg")
+  );
+  background-repeat: no-repeat;
   background-position: left center;
   background-size: cover;
   padding-top: 60px;
-  height: 100%;
   &__wrapper {
     display: flex;
     flex-direction: column;

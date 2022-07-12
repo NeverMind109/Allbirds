@@ -42,6 +42,7 @@ body {
   overflow-x: hidden;
 }
 .section {
+  overflow: hidden;
   padding: 120px 0 0;
 }
 .section-title {
@@ -61,11 +62,12 @@ body {
   padding: 15px 5px 13px;
   border-radius: 2px;
   color: #212a2f;
-  background: #ffffff;
+  background-color: #ffffff;
   border: 2px solid #fff;
+  transition: border 0.3s, background-color 0.3s, color 0.3s;
   &:hover {
     border: 2px solid #212a2f;
-    background: #212a2f;
+    background-color: #212a2f;
     color: #fff;
   }
   &:active {
@@ -82,16 +84,20 @@ body {
   padding: 15px 5px 13px;
   border-radius: 2px;
   color: #fff;
-  background: #212a2f;
+  background-color: #212a2f;
   border: 2px solid #212a2f;
+  transition: border 0.3s, background-color 0.3s, color 0.3s;
   &:hover {
     border: 2px solid #212a2f;
-    background: #fff;
+    background-color: #fff;
     color: #212a2f;
   }
   &:active {
     border: 2px solid #212a2f;
   }
+}
+.logo {
+  padding: 0;
 }
 .profile {
   position: relative;
@@ -131,7 +137,12 @@ body {
     display: block;
     width: 37px;
     height: 22px;
-    background: url("../images/footer-flag-1.png") no-repeat;
+    background-image: url("../images/footer-flag-1.png");
+    background-image: (
+      "../images/footer-flag-1.webp" type("image/webp"),
+      "../images/footer-flag-1.png" type("image/png")
+    );
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
@@ -143,7 +154,12 @@ body {
     display: block;
     width: 37px;
     height: 22px;
-    background: url("../images/footer-flag-2.png") no-repeat;
+    background-image: url("../images/footer-flag-2.png");
+    background-image: (
+      "../images/footer-flag-2.webp" type("image/webp"),
+      "../images/footer-flag-2.png" type("image/png")
+    );
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }

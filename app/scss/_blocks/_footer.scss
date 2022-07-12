@@ -2,7 +2,6 @@
   background-color: #212a2f;
   padding: 72px 30px 90px;
   &__upper {
-    margin: 0;
     padding-bottom: 72px;
   }
   &__list {
@@ -31,12 +30,6 @@
     font-weight: 400;
     color: #ffffff;
     padding-bottom: 90px;
-  }
-  &__bottom-info {
-    padding: 0;
-  }
-  &__bottom-images {
-    padding: 0;
   }
   &__bottom-text {
     max-width: 300px;

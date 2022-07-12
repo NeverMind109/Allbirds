@@ -3,10 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Allbirds</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -59,13 +56,25 @@
                 <a class="menu-list__link" href="#">Stores</a>
               </li>
               <li class="menu-list__item menu-list__button menu-list__profile">
-                <a class="menu-list__link profile" href="#"> </a>
+                <a
+                  class="menu-list__link profile"
+                  href="#"
+                  aria-label="Go to profile page"
+                ></a>
               </li>
               <li class="menu-list__item menu-list__button">
-                <a class="menu-list__link question" href="#"> </a>
+                <a
+                  class="menu-list__link question"
+                  href="#"
+                  aria-label="Popular questions page"
+                ></a>
               </li>
               <li class="menu-list__item menu-list__button">
-                <a class="menu-list__link cart" href="#">
+                <a
+                  class="menu-list__link cart"
+                  href="#"
+                  aria-label="Shopping Cart page"
+                >
                   <span class="menu-list__cart-counter">0</span>
                 </a>
               </li>
@@ -93,13 +102,25 @@
               <li
                 class="menu-mobile__item menu-mobile__button menu-mobile__profile"
               >
-                <a class="menu-mobile__link profile" href="#"></a>
+                <a
+                  class="menu-mobile__link profile"
+                  href="#"
+                  aria-label="Popular questions page"
+                ></a>
               </li>
               <li class="menu-mobile__item menu-mobile__button">
-                <a class="menu-mobile__link question" href="#"></a>
+                <a
+                  class="menu-mobile__link question"
+                  href="#"
+                  aria-label="Go to profile page"
+                ></a>
               </li>
               <li class="menu-mobile__item menu-mobile__button">
-                <a class="menu-mobile__link cart" href="#">
+                <a
+                  class="menu-mobile__link cart"
+                  href="#"
+                  aria-label="Shopping cart page"
+                >
                   <span class="menu-mobile__cart-counter">0</span>
                 </a>
               </li>
@@ -108,6 +129,7 @@
           <button
             class="menu-button d-md-none d-flex flex-column justify-content-between order-4 justify-content-end col-3"
             type="button"
+            aria-label="Mobile Menu Button"
           >
             <span class="menu-button__line"></span>
             <span class="menu-button__line"></span>
@@ -199,13 +221,20 @@
                     class="row row-cols-1 row-cols-md-3 favorites__wrapper d-flex justify-content-center justify-content-md-between align-items-start"
                   >
                     <div class="card favorites__card favorites__everyday-card">
-                      <img
-                        src="images/wool-runner-img.jpg"
-                        class="favorites__card-img"
-                        alt="Wool Runner Sneakers Image"
-                        width="396"
-                        height="396"
-                      />
+                      <picture>
+                        <source
+                          srcset="images/wool-runner-img.webp"
+                          type="image/webp"
+                        />
+                        <img
+                          class="favorites__card-img"
+                          loading="lazy"
+                          src="images/wool-runner-img.jpg"
+                          width="396"
+                          height="396"
+                          alt="Wool Runner Sneakers Image"
+                        />
+                      </picture>
                       <div class="card-img-overlay favorites__img-buttons">
                         <a class="button-light favorites__img-button" href="#"
                           ><span class="favorites__img-text">Shop Men</span></a
@@ -230,13 +259,20 @@
                       </div>
                     </div>
                     <div class="card favorites__card favorites__everyday-card">
-                      <img
-                        src="images/tree-runner-img.jpg"
-                        class="favorites__card-img"
-                        alt="Tree Runner Sneakers Image"
-                        width="396"
-                        height="396"
-                      />
+                      <picture>
+                        <source
+                          srcset="images/tree-runner-img.webp"
+                          type="image/webp"
+                        />
+                        <img
+                          class="favorites__card-img"
+                          loading="lazy"
+                          src="images/tree-runner-img.jpg"
+                          width="396"
+                          height="396"
+                          alt="Tree Runner Sneakers Image"
+                        />
+                      </picture>
                       <div class="card-img-overlay favorites__img-buttons">
                         <a class="button-light favorites__img-button" href="#"
                           ><span class="favorites__img-text">Shop Men</span></a
@@ -261,13 +297,21 @@
                       </div>
                     </div>
                     <div class="card favorites__card favorites__everyday-card">
-                      <img
-                        src="images/wool-runner-mizzle-img.jpg"
-                        class="favorites__card-img"
-                        alt="Sneakers Image Sneakers Image"
-                        width="396"
-                        height="396"
-                      />
+                      <picture>
+                        <source
+                          srcset="images/wool-runner-mizzle-img.webp"
+                          type="image/webp"
+                        />
+                        <img
+                          class="favorites__card-img"
+                          loading="lazy"
+                          src="images/wool-runner-mizzle-img.jpg"
+                          width="396"
+                          height="396"
+                          alt="Sneakers Image Sneakers Image"
+                        />
+                      </picture>
+
                       <div class="card-img-overlay favorites__img-buttons">
                         <a class="button-light favorites__img-button" href="#"
                           ><span class="favorites__img-text">Shop Men</span></a
@@ -302,14 +346,21 @@
                   <div
                     class="row row-cols-1 row-cols-md-3 favorites__wrapper d-flex justify-content-center justify-content-md-between align-items-start"
                   >
-                    <div class="card favorites__card favorites__running-card">
-                      <img
-                        src="images/wool-runner-img.jpg"
-                        class="favorites__card-img"
-                        alt="Wool Runner Sneakers Image"
-                        width="396"
-                        height="396"
-                      />
+                    <div class="card favorites__card favorites__everyday-card">
+                      <picture>
+                        <source
+                          srcset="images/wool-runner-img.webp"
+                          type="image/webp"
+                        />
+                        <img
+                          class="favorites__card-img"
+                          loading="lazy"
+                          src="images/wool-runner-img.jpg"
+                          width="396"
+                          height="396"
+                          alt="Wool Runner Sneakers Image"
+                        />
+                      </picture>
                       <div class="card-img-overlay favorites__img-buttons">
                         <a class="button-light favorites__img-button" href="#"
                           ><span class="favorites__img-text">Shop Men</span></a
@@ -322,7 +373,7 @@
                       </div>
                       <div class="card-body favorites__body">
                         <h3
-                          class="card-title favorites__card-title favorites__running-title"
+                          class="card-title favorites__card-title favorites__everyday-title"
                         >
                           Wool Runner
                         </h3>
@@ -333,14 +384,21 @@
                         </p>
                       </div>
                     </div>
-                    <div class="card favorites__card favorites__running-card">
-                      <img
-                        src="images/tree-runner-img.jpg"
-                        class="favorites__card-img"
-                        alt="Tree Runner Sneakers Image"
-                        width="396"
-                        height="396"
-                      />
+                    <div class="card favorites__card favorites__everyday-card">
+                      <picture>
+                        <source
+                          srcset="images/tree-runner-img.webp"
+                          type="image/webp"
+                        />
+                        <img
+                          class="favorites__card-img"
+                          loading="lazy"
+                          src="images/tree-runner-img.jpg"
+                          width="396"
+                          height="396"
+                          alt="Tree Runner Sneakers Image"
+                        />
+                      </picture>
                       <div class="card-img-overlay favorites__img-buttons">
                         <a class="button-light favorites__img-button" href="#"
                           ><span class="favorites__img-text">Shop Men</span></a
@@ -353,7 +411,7 @@
                       </div>
                       <div class="card-body favorites__body">
                         <h3
-                          class="card-title favorites__card-title favorites__running-title"
+                          class="card-title favorites__card-title favorites__everyday-title"
                         >
                           Tree Runner
                         </h3>
@@ -364,14 +422,22 @@
                         </p>
                       </div>
                     </div>
-                    <div class="card favorites__card favorites__running-card">
-                      <img
-                        src="images/wool-runner-mizzle-img.jpg"
-                        class="favorites__card-img"
-                        alt="Sneakers Image Sneakers Image"
-                        width="396"
-                        height="396"
-                      />
+                    <div class="card favorites__card favorites__everyday-card">
+                      <picture>
+                        <source
+                          srcset="images/wool-runner-mizzle-img.webp"
+                          type="image/webp"
+                        />
+                        <img
+                          class="favorites__card-img"
+                          loading="lazy"
+                          src="images/wool-runner-mizzle-img.jpg"
+                          width="396"
+                          height="396"
+                          alt="Sneakers Image Sneakers Image"
+                        />
+                      </picture>
+
                       <div class="card-img-overlay favorites__img-buttons">
                         <a class="button-light favorites__img-button" href="#"
                           ><span class="favorites__img-text">Shop Men</span></a
@@ -384,7 +450,7 @@
                       </div>
                       <div class="card-body favorites__body">
                         <h3
-                          class="card-title favorites__card-title favorites__running-title"
+                          class="card-title favorites__card-title favorites__everyday-title"
                         >
                           Wool Runner Mizzle
                         </h3>
@@ -406,14 +472,21 @@
                   <div
                     class="row row-cols-1 row-cols-md-3 favorites__wrapper d-flex justify-content-center justify-content-md-between align-items-start"
                   >
-                    <div class="card favorites__card favorites__travel-card">
-                      <img
-                        src="images/wool-runner-img.jpg"
-                        class="favorites__card-img"
-                        alt="Wool Runner Sneakers Image"
-                        width="396"
-                        height="396"
-                      />
+                    <div class="card favorites__card favorites__everyday-card">
+                      <picture>
+                        <source
+                          srcset="images/wool-runner-img.webp"
+                          type="image/webp"
+                        />
+                        <img
+                          class="favorites__card-img"
+                          loading="lazy"
+                          src="images/wool-runner-img.jpg"
+                          width="396"
+                          height="396"
+                          alt="Wool Runner Sneakers Image"
+                        />
+                      </picture>
                       <div class="card-img-overlay favorites__img-buttons">
                         <a class="button-light favorites__img-button" href="#"
                           ><span class="favorites__img-text">Shop Men</span></a
@@ -426,7 +499,7 @@
                       </div>
                       <div class="card-body favorites__body">
                         <h3
-                          class="card-title favorites__card-title favorites__travel-title"
+                          class="card-title favorites__card-title favorites__everyday-title"
                         >
                           Wool Runner
                         </h3>
@@ -437,14 +510,21 @@
                         </p>
                       </div>
                     </div>
-                    <div class="card favorites__card favorites__travel-card">
-                      <img
-                        src="images/tree-runner-img.jpg"
-                        class="favorites__card-img"
-                        alt="Tree Runner Sneakers Image"
-                        width="396"
-                        height="396"
-                      />
+                    <div class="card favorites__card favorites__everyday-card">
+                      <picture>
+                        <source
+                          srcset="images/tree-runner-img.webp"
+                          type="image/webp"
+                        />
+                        <img
+                          class="favorites__card-img"
+                          loading="lazy"
+                          src="images/tree-runner-img.jpg"
+                          width="396"
+                          height="396"
+                          alt="Tree Runner Sneakers Image"
+                        />
+                      </picture>
                       <div class="card-img-overlay favorites__img-buttons">
                         <a class="button-light favorites__img-button" href="#"
                           ><span class="favorites__img-text">Shop Men</span></a
@@ -457,7 +537,7 @@
                       </div>
                       <div class="card-body favorites__body">
                         <h3
-                          class="card-title favorites__card-title favorites__travel-title"
+                          class="card-title favorites__card-title favorites__everyday-title"
                         >
                           Tree Runner
                         </h3>
@@ -468,14 +548,22 @@
                         </p>
                       </div>
                     </div>
-                    <div class="card favorites__card favorites__travel-card">
-                      <img
-                        src="images/wool-runner-mizzle-img.jpg"
-                        class="favorites__card-img"
-                        alt="Sneakers Image Sneakers Image"
-                        width="396"
-                        height="396"
-                      />
+                    <div class="card favorites__card favorites__everyday-card">
+                      <picture>
+                        <source
+                          srcset="images/wool-runner-mizzle-img.webp"
+                          type="image/webp"
+                        />
+                        <img
+                          class="favorites__card-img"
+                          loading="lazy"
+                          src="images/wool-runner-mizzle-img.jpg"
+                          width="396"
+                          height="396"
+                          alt="Sneakers Image Sneakers Image"
+                        />
+                      </picture>
+
                       <div class="card-img-overlay favorites__img-buttons">
                         <a class="button-light favorites__img-button" href="#"
                           ><span class="favorites__img-text">Shop Men</span></a
@@ -488,7 +576,7 @@
                       </div>
                       <div class="card-body favorites__body">
                         <h3
-                          class="card-title favorites__card-title favorites__travel-title"
+                          class="card-title favorites__card-title favorites__everyday-title"
                         >
                           Wool Runner Mizzle
                         </h3>
@@ -508,13 +596,17 @@
       </section>
       <section class="section slogan">
         <div class="slogan__wrapper d-flex flex-column align-items-center">
-          <img
-            class="slogan__img"
-            src="images/slogan-img-1.jpg"
-            alt=""
-            width="1440"
-            height="542"
-          />
+          <picture>
+            <source srcset="images/slogan-img-1.webp" type="image/webp" />
+            <img
+              class="slogan__img"
+              loading="lazy"
+              src="images/slogan-img-1.jpg"
+              width="1440"
+              height="542"
+              alt=""
+            />
+          </picture>
           <div class="slogan__information">
             <div class="container">
               <div
@@ -547,13 +639,20 @@
           </h2>
           <div class="slider-section__carousel collections__carousel">
             <a class="card slider-section__card h-100" href="#">
-              <img
-                class="slider-section__card-img"
-                src="images/collections-slider-img-1.jpg"
-                alt=""
-                width="396"
-                height="396"
-              />
+              <picture>
+                <source
+                  srcset="images/collections-slider-img-1.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="slider-section__card-img"
+                  loading="lazy"
+                  src="images/collections-slider-img-1.jpg"
+                  width="396"
+                  height="396"
+                  alt=""
+                />
+              </picture>
               <div class="card-body slider-section__card-body">
                 <h3 class="card-title slider-section__card-title">
                   New Arrivals
@@ -565,13 +664,20 @@
               </div>
             </a>
             <a class="card slider-section__card h-100" href="#">
-              <img
-                class="slider-section__card-img"
-                src="images/collections-slider-img-2.jpg"
-                alt=""
-                width="396"
-                height="396"
-              />
+              <picture>
+                <source
+                  srcset="images/collections-slider-img-2.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="slider-section__card-img"
+                  loading="lazy"
+                  src="images/collections-slider-img-2.jpg"
+                  width="396"
+                  height="396"
+                  alt=""
+                />
+              </picture>
               <div class="card-body slider-section__card-body">
                 <h3 class="card-title slider-section__card-title">
                   Natural Run Collection
@@ -583,13 +689,20 @@
               </div>
             </a>
             <a class="card slider-section__card h-100" href="#">
-              <img
-                class="slider-section__card-img"
-                src="images/collections-slider-img-3.jpg"
-                alt=""
-                width="396"
-                height="396"
-              />
+              <picture>
+                <source
+                  srcset="images/collections-slider-img-3.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="slider-section__card-img"
+                  loading="lazy"
+                  src="images/collections-slider-img-3.jpg"
+                  width="396"
+                  height="396"
+                  alt=""
+                />
+              </picture>
               <div class="card-body slider-section__card-body">
                 <h3 class="card-title slider-section__card-title">
                   Fresh Long Sleeve Tee Colors
@@ -600,13 +713,20 @@
               </div>
             </a>
             <a class="card slider-section__card h-100" href="#">
-              <img
-                class="slider-section__card-img"
-                src="images/collections-slider-img-1.jpg"
-                alt=""
-                width="396"
-                height="396"
-              />
+              <picture>
+                <source
+                  srcset="images/collections-slider-img-1.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="slider-section__card-img"
+                  loading="lazy"
+                  src="images/collections-slider-img-1.jpg"
+                  width="396"
+                  height="396"
+                  alt=""
+                />
+              </picture>
               <div class="card-body slider-section__card-body">
                 <h3 class="card-title slider-section__card-title">
                   New Arrivals
@@ -618,13 +738,20 @@
               </div>
             </a>
             <a class="card slider-section__card h-100" href="#">
-              <img
-                class="slider-section__card-img"
-                src="images/collections-slider-img-2.jpg"
-                alt=""
-                width="396"
-                height="396"
-              />
+              <picture>
+                <source
+                  srcset="images/collections-slider-img-2.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="slider-section__card-img"
+                  loading="lazy"
+                  src="images/collections-slider-img-2.jpg"
+                  width="396"
+                  height="396"
+                  alt=""
+                />
+              </picture>
               <div class="card-body slider-section__card-body">
                 <h3 class="card-title slider-section__card-title">
                   Natural Run Collection
@@ -636,13 +763,20 @@
               </div>
             </a>
             <a class="card slider-section__card h-100" href="#">
-              <img
-                class="slider-section__card-img"
-                src="images/collections-slider-img-3.jpg"
-                alt=""
-                width="396"
-                height="396"
-              />
+              <picture>
+                <source
+                  srcset="images/collections-slider-img-3.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="slider-section__card-img"
+                  loading="lazy"
+                  src="images/collections-slider-img-3.jpg"
+                  width="396"
+                  height="396"
+                  alt=""
+                />
+              </picture>
               <div class="card-body slider-section__card-body">
                 <h3 class="card-title slider-section__card-title">
                   Fresh Long Sleeve Tee Colors
@@ -657,13 +791,17 @@
       </section>
       <section class="section slogan second-slogan">
         <div class="slogan__wrapper d-flex flex-column align-items-center">
-          <img
-            class="slogan__img"
-            src="images/slogan-img-2.jpg"
-            alt=""
-            width="1440"
-            height="545"
-          />
+          <picture>
+            <source srcset="images/slogan-img-2.webp" type="image/webp" />
+            <img
+              class="slogan__img"
+              loading="lazy"
+              src="images/slogan-img-2.jpg"
+              width="1440"
+              height="545"
+              alt=""
+            />
+          </picture>
           <div class="slogan__information">
             <div class="container">
               <div
@@ -690,13 +828,20 @@
           <h2 class="section-title slider-section__title">New Arrivals</h2>
           <div class="slider-section__carousel arrivals__carousel">
             <a class="card slider-section__card h-100" href="#">
-              <img
-                class="slider-section__card-img arrivals__card-img"
-                src="images/arrivals-slidar-img-1.png"
-                alt=""
-                width="396"
-                height="396"
-              />
+              <picture>
+                <source
+                  srcset="images/arrivals-slidar-img-1.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="slider-section__card-img arrivals__card-img"
+                  loading="lazy"
+                  src="images/arrivals-slidar-img-1.png"
+                  width="396"
+                  height="396"
+                  alt=""
+                />
+              </picture>
               <div class="card-body slider-section__card-body">
                 <h3 class="card-title slider-section__card-title">
                   Men's Trail Runner SWT
@@ -707,13 +852,20 @@
               </div>
             </a>
             <a class="card slider-section__card h-100" href="#">
-              <img
-                class="slider-section__card-img arrivals__card-img"
-                src="images/arrivals-slidar-img-2.png"
-                alt=""
-                width="396"
-                height="396"
-              />
+              <picture>
+                <source
+                  srcset="images/arrivals-slidar-img-2.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="slider-section__card-img arrivals__card-img"
+                  loading="lazy"
+                  src="images/arrivals-slidar-img-2.png"
+                  width="396"
+                  height="396"
+                  alt=""
+                />
+              </picture>
               <div class="card-body slider-section__card-body">
                 <h3 class="card-title slider-section__card-title">
                   Women's Trail Runner SWT
@@ -724,13 +876,20 @@
               </div>
             </a>
             <a class="card slider-section__card h-100" href="#">
-              <img
-                class="slider-section__card-img arrivals__card-img"
-                src="images/arrivals-slidar-img-3.png"
-                alt=""
-                width="396"
-                height="396"
-              />
+              <picture>
+                <source
+                  srcset="images/arrivals-slidar-img-3.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="slider-section__card-img arrivals__card-img"
+                  loading="lazy"
+                  src="images/arrivals-slidar-img-3.png"
+                  width="396"
+                  height="396"
+                  alt=""
+                />
+              </picture>
               <div class="card-body slider-section__card-body">
                 <h3 class="card-title slider-section__card-title">
                   Men's Trail Runner SWT
@@ -741,13 +900,20 @@
               </div>
             </a>
             <a class="card slider-section__card h-100" href="#">
-              <img
-                class="slider-section__card-img arrivals__card-img"
-                src="images/arrivals-slidar-img-1.png"
-                alt=""
-                width="396"
-                height="396"
-              />
+              <picture>
+                <source
+                  srcset="images/arrivals-slidar-img-1.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="slider-section__card-img arrivals__card-img"
+                  loading="lazy"
+                  src="images/arrivals-slidar-img-1.png"
+                  width="396"
+                  height="396"
+                  alt=""
+                />
+              </picture>
               <div class="card-body slider-section__card-body">
                 <h3 class="card-title slider-section__card-title">
                   Men's Trail Runner SWT
@@ -758,13 +924,20 @@
               </div>
             </a>
             <a class="card slider-section__card h-100" href="#">
-              <img
-                class="slider-section__card-img arrivals__card-img"
-                src="images/arrivals-slidar-img-2.png"
-                alt=""
-                width="396"
-                height="396"
-              />
+              <picture>
+                <source
+                  srcset="images/arrivals-slidar-img-2.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="slider-section__card-img arrivals__card-img"
+                  loading="lazy"
+                  src="images/arrivals-slidar-img-2.png"
+                  width="396"
+                  height="396"
+                  alt=""
+                />
+              </picture>
               <div class="card-body slider-section__card-body">
                 <h3 class="card-title slider-section__card-title">
                   Women's Trail Runner SWT
@@ -775,13 +948,20 @@
               </div>
             </a>
             <a class="card slider-section__card h-100" href="#">
-              <img
-                class="slider-section__card-img arrivals__card-img"
-                src="images/arrivals-slidar-img-3.png"
-                alt=""
-                width="396"
-                height="396"
-              />
+              <picture>
+                <source
+                  srcset="images/arrivals-slidar-img-3.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="slider-section__card-img arrivals__card-img"
+                  loading="lazy"
+                  src="images/arrivals-slidar-img-3.png"
+                  width="396"
+                  height="396"
+                  alt=""
+                />
+              </picture>
               <div class="card-body slider-section__card-body">
                 <h3 class="card-title slider-section__card-title">
                   Men's Trail Runner SWT
@@ -796,13 +976,17 @@
       </section>
       <section class="section slogan third-slogan" id="sustainability">
         <div class="slogan__wrapper d-flex flex-column align-items-center">
-          <img
-            class="slogan__img"
-            src="images/slogan-img-3.jpg"
-            alt=""
-            width="1440"
-            height="542"
-          />
+          <picture>
+            <source srcset="images/slogan-img-3.webp" type="image/webp" />
+            <img
+              class="slogan__img"
+              loading="lazy"
+              src="images/slogan-img-3.jpg"
+              width="1440"
+              height="542"
+              alt=""
+            />
+          </picture>
           <div class="slogan__information">
             <div class="container">
               <div
@@ -832,13 +1016,20 @@
           <h2 class="section-title slider-section__title">Stories</h2>
           <div class="slider-section__carousel stories__carousel">
             <a class="card slider-section__card h-100" href="#">
-              <img
-                class="slider-section__card-img"
-                src="images/stories-slider-img-1.jpg"
-                alt=""
-                width="396"
-                height="396"
-              />
+              <picture>
+                <source
+                  srcset="images/stories-slider-img-1.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="slider-section__card-img"
+                  loading="lazy"
+                  src="images/stories-slider-img-1.png"
+                  width="396"
+                  height="396"
+                  alt=""
+                />
+              </picture>
               <div class="card-body slider-section__card-body">
                 <h3 class="card-title slider-section__card-title">
                   Planet-Friendly Activewear
@@ -850,13 +1041,20 @@
               </div>
             </a>
             <a class="card slider-section__card h-100" href="#">
-              <img
-                class="slider-section__card-img"
-                src="images/stories-slider-img-2.jpg"
-                alt=""
-                width="396"
-                height="396"
-              />
+              <picture>
+                <source
+                  srcset="images/stories-slider-img-2.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="slider-section__card-img"
+                  loading="lazy"
+                  src="images/stories-slider-img-2.png"
+                  width="396"
+                  height="396"
+                  alt=""
+                />
+              </picture>
               <div class="card-body slider-section__card-body">
                 <h3 class="card-title slider-section__card-title">
                   adidas and Allbirds
@@ -868,13 +1066,20 @@
               </div>
             </a>
             <a class="card slider-section__card h-100" href="#">
-              <img
-                class="slider-section__card-img"
-                src="images/stories-slider-img-3.jpg"
-                alt=""
-                width="396"
-                height="396"
-              />
+              <picture>
+                <source
+                  srcset="images/stories-slider-img-3.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="slider-section__card-img"
+                  loading="lazy"
+                  src="images/stories-slider-img-3.png"
+                  width="396"
+                  height="396"
+                  alt=""
+                />
+              </picture>
               <div class="card-body slider-section__card-body">
                 <h3 class="card-title slider-section__card-title">
                   How much did your outfit cost the planet?
@@ -886,13 +1091,20 @@
               </div>
             </a>
             <a class="card slider-section__card h-100" href="#">
-              <img
-                class="slider-section__card-img"
-                src="images/stories-slider-img-1.jpg"
-                alt=""
-                width="396"
-                height="396"
-              />
+              <picture>
+                <source
+                  srcset="images/stories-slider-img-1.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="slider-section__card-img"
+                  loading="lazy"
+                  src="images/stories-slider-img-1.png"
+                  width="396"
+                  height="396"
+                  alt=""
+                />
+              </picture>
               <div class="card-body slider-section__card-body">
                 <h3 class="card-title slider-section__card-title">
                   Planet-Friendly Activewear
@@ -904,13 +1116,20 @@
               </div>
             </a>
             <a class="card slider-section__card h-100" href="#">
-              <img
-                class="slider-section__card-img"
-                src="images/stories-slider-img-2.jpg"
-                alt=""
-                width="396"
-                height="396"
-              />
+              <picture>
+                <source
+                  srcset="images/stories-slider-img-2.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="slider-section__card-img"
+                  loading="lazy"
+                  src="images/stories-slider-img-2.png"
+                  width="396"
+                  height="396"
+                  alt=""
+                />
+              </picture>
               <div class="card-body slider-section__card-body">
                 <h3 class="card-title slider-section__card-title">
                   adidas and Allbirds
@@ -922,13 +1141,20 @@
               </div>
             </a>
             <a class="card slider-section__card h-100" href="#">
-              <img
-                class="slider-section__card-img"
-                src="images/stories-slider-img-3.jpg"
-                alt=""
-                width="396"
-                height="396"
-              />
+              <picture>
+                <source
+                  srcset="images/stories-slider-img-3.webp"
+                  type="image/webp"
+                />
+                <img
+                  class="slider-section__card-img"
+                  loading="lazy"
+                  src="images/stories-slider-img-3.png"
+                  width="396"
+                  height="396"
+                  alt=""
+                />
+              </picture>
               <div class="card-body slider-section__card-body">
                 <h3 class="card-title slider-section__card-title">
                   How much did your outfit cost the planet?
@@ -986,117 +1212,129 @@
       <div
         class="row footer__upper d-flex flex-column flex-sm-row justify-content-md-start justify-content-center align-items-start"
       >
-        <ul
-          class="footer__list footer__list-help align-self-center align-self-sm-start col-md-3 col-sm-4 col-7"
-        >
-          <li class="footer__list-item">
-            <h3 class="footer__title">Help</h3>
-          </li>
-          <li class="footer__list-item">
-            <a class="footer__list-link" href="tel:+18889638944"
-              >1-888-963-8944</a
-            >
-          </li>
-          <li class="footer__list-item">1-814-251-9966 (Text)</li>
-          <li class="footer__list-item">
-            <a class="footer__list-link" href="mailto:help@allbirds.com"
-              >help@allbirds.com</a
-            >
-          </li>
-          <li class="footer__list-item">
-            <a class="footer__list-link" href="#">Returns/Exchanges</a>
-          </li>
-          <li class="footer__list-item">
-            <a class="footer__list-link" href="#">FAQ/Contact Us</a>
-          </li>
-          <li class="footer__list-item">
-            <a class="footer__list-link" href="#">Afterpay</a>
-          </li>
-        </ul>
-        <ul
-          class="footer__list footer__list-shop align-self-center align-self-sm-start col-md-3 col-sm-4 col-7"
-        >
-          <li class="footer__list-item">
-            <h3 class="footer__title">Shop</h3>
-          </li>
-          <li class="footer__list-item">
-            <a class="footer__list-link" href="#">Men's Shoes</a>
-          </li>
-          <li class="footer__list-item">
-            <a class="footer__list-link" href="#">Women's Shoes</a>
-          </li>
-          <li class="footer__list-item">
-            <a class="footer__list-link" href="#">Men's Apparel</a>
-          </li>
-          <li class="footer__list-item">
-            <a class="footer__list-link" href="#">Women's Apparel</a>
-          </li>
-          <li class="footer__list-item">
-            <a class="footer__list-link" href="#">Socks</a>
-          </li>
-          <li class="footer__list-item">
-            <a class="footer__list-link" href="#">Gift Cards</a>
-          </li>
-          <li class="footer__list-item">
-            <a class="footer__list-link" href="#">Download the Allbirds App</a>
-          </li>
-        </ul>
-        <ul
-          class="footer__list footer__list-company align-self-center align-self-sm-start col-md-3 col-sm-4 col-7"
-        >
-          <li class="footer__list-item">
-            <h3 class="footer__title">Company</h3>
-          </li>
-          <li class="footer__list-item">
-            <a class="footer__list-link" href="#">Our Stores</a>
-          </li>
-          <li class="footer__list-item">
-            <a class="footer__list-link" href="#">Our Story</a>
-          </li>
-          <li class="footer__list-item">
-            <a class="footer__list-link" href="#">Our Materials</a>
-          </li>
-          <li class="footer__list-item">
-            <a class="footer__list-link" href="#">Sustainability</a>
-          </li>
-          <li class="footer__list-item">
-            <a class="footer__list-link" href="#">Partnerships</a>
-          </li>
-          <li class="footer__list-item">
-            <a class="footer__list-link" href="#">Product Testing</a>
-          </li>
-          <li class="footer__list-item">
-            <a class="footer__list-link" href="#">Affiliates</a>
-          </li>
-          <li class="footer__list-item">
-            <a class="footer__list-link" href="#">Bulk Orders</a>
-          </li>
-          <li class="footer__list-item">
-            <a class="footer__list-link" href="#">Careers</a>
-          </li>
-          <li class="footer__list-item">
-            <a class="footer__list-link" href="#">Press</a>
-          </li>
-          <li class="footer__list-item">
-            <a class="footer__list-link" href="#"
-              >California Transparency Act</a
-            >
-          </li>
-        </ul>
+        <div class="col-md-3 col-sm-4 col-7">
+          <ul
+            class="footer__list footer__list-help align-self-center align-self-sm-start"
+          >
+            <li class="footer__list-item">
+              <h3 class="footer__title">Help</h3>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="tel:+18889638944"
+                >1-888-963-8944</a
+              >
+            </li>
+            <li class="footer__list-item">1-814-251-9966 (Text)</li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="mailto:help@allbirds.com"
+                >help@allbirds.com</a
+              >
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Returns/Exchanges</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">FAQ/Contact Us</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Afterpay</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-4 col-7">
+          <ul
+            class="footer__list footer__list-shop align-self-center align-self-sm-start"
+          >
+            <li class="footer__list-item">
+              <h3 class="footer__title">Shop</h3>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Men's Shoes</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Women's Shoes</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Men's Apparel</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Women's Apparel</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Socks</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Gift Cards</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#"
+                >Download the Allbirds App</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-4 col-7">
+          <ul
+            class="footer__list footer__list-company align-self-center align-self-sm-start"
+          >
+            <li class="footer__list-item">
+              <h3 class="footer__title">Company</h3>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Our Stores</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Our Story</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Our Materials</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Sustainability</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Partnerships</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Product Testing</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Affiliates</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Bulk Orders</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Careers</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Press</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#"
+                >California Transparency Act</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
       <div
-        class="row footer__bottom d-flex flex-column flex-md-row justify-content-between align-items-md-start align-items-center"
+        class="row footer__bottom d-flex flex-column flex-md-row justify-content-between align-items-md-start"
       >
-        <div class="footer__bottom-info col-md-3 col-6">
-          <h3 class="footer__title">Follow the Flock</h3>
-          <p class="footer__bottom-text">
-            Exclusive offers, a heads up on new things, and sightings of
-            Allbirds in the wild. Oh, we have cute sheep, too. #weareallbirds
-          </p>
+        <div class="col-md-3 col-6">
+          <div class="footer__bottom-info">
+            <h3 class="footer__title">Follow the Flock</h3>
+            <p class="footer__bottom-text">
+              Exclusive offers, a heads up on new things, and sightings of
+              Allbirds in the wild. Oh, we have cute sheep, too. #weareallbirds
+            </p>
+          </div>
         </div>
-        <div class="footer__bottom-images d-flex col-md-3 col-6">
-          <div class="footer__bottom-flag flag-jp"></div>
-          <div class="footer__bottom-flag flag-sk"></div>
+        <div class="col-md-3 col-6">
+          <div class="footer__bottom-images d-flex">
+            <div class="footer__bottom-flag flag-jp"></div>
+            <div class="footer__bottom-flag flag-sk"></div>
+          </div>
         </div>
       </div>
       <div class="footer__copy col-12 col-md-7">
